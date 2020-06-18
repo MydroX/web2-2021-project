@@ -31,5 +31,5 @@ jobs:
           KEY: ${{ secrets.SSH_KEY }}
           script: |
             cd /var/www/web2-2021-project
-            ll
+            pwd
 #            composer install --no-dev --optimize-autoloader
