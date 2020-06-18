@@ -18,13 +18,7 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSH_KEY }}
-#          KEY_PATH: ${{ secrets.KEY_PATH }}
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSH_KEY }}
-          key_path: "/var/www/web2-2021-project/.ssh/id_rsa"
           source: "."
           target: "/var/www/web2-2021-project"
 
@@ -35,7 +29,7 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSH_KEY }}
-          KEY_PATH: ${{ secrets.KEY_PATH }}
-          debug: true
           script: |
-            ls
+            cd /var/www/web2-2021-project
+            ll
+#            composer install --no-dev --optimize-autoloader
