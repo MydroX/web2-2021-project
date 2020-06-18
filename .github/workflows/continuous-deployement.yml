@@ -1,7 +1,8 @@
 name: Continuous Deployement
 on:
   push:
-    -master
+    branches:
+      - master
 
   jobs:
     deploy_production:
