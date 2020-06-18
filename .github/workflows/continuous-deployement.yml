@@ -20,6 +20,11 @@ jobs:
           KEY: ${{ secrets.SSH_KEY }}
           KEY_PATH: ${{ secrets.KEY_PATH }}
         with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSH_KEY }}
+          key_path: ${{ secrets.KEY_PATH }}
           source: "."
           target: "/var/www/web2-2021-project"
 
