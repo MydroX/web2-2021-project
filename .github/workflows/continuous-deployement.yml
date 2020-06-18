@@ -31,5 +31,6 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSH_KEY }}
           KEY_PATH: ${{ secrets.KEY_PATH }}
+          debug: true
           script: |
             ls
