@@ -1,0 +1,57 @@
+version: '3'
+services:
+  server:
+    build:
+      context: ./images
+      dockerfile: Dockerfile
+    container_name: w2p.server
+    hostname: hetic.dev
+    ports:
+      - 80:80
+
+    volumes:
+      - /home/maxime/projects/HETIC/web2_2021_project:/var/www/html
+
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html/public
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=web2_2021_project
+      - COMPOSER_ALLOW_SUPERUSER=1
+      - ENV=docker
+      - TZ="Europe/Paris"
+    networks:
+      - shared
+  db:
+    image: mysql:8.0.20
+    container_name: w2p.db
+    volumes:
+      - ./images/conf/mysql:/docker-entrypoint-initdb.d
+      - ./data/mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=web2_2021_project
+    networks:
+      - shared
+
+  phpmyadmin:
+    container_name: w2p.phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
+    ports:
+      - '8081:80'
+    environment:
+      - PMA_USER=root
+      - PMA_PASSWORD=root
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
+      - PMA_PORTS=3306
+    networks:
+      - shared
+
+networks:
+  shared:
+    external:
+      name: shared
