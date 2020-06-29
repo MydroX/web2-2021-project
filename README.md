@@ -1,24 +1,24 @@
-#Projet W2-2021 - G10
+# Projet W2-2021 - G10
 
 Repository de l'API pour le projet du groupe 10
 
-##Requirements
+## Requirements
 * PHP 7.4
 * MySQL 8.0
 
-##Tech used
+## Tech used
 * Symfony 5
     * makerbundle
     * doctrine
 * Github actions (CI/CD)
 * Docker custom
 
-##Production spec
+## Production spec
 * Hosted VPS by OVH
 * Ubuntu 18.04 LTS
 * Apache 2
 
-##Docker installation
+## Docker installation
 You will need Linux, MacOS, or Windows 10 Pro to run docker.
 
 Create in your folder `./docker` a file named `docker-compose.override.yml` and copy/paste this block :
@@ -34,7 +34,7 @@ Replace `[folder_who_contain_the_project]` by your folder who contain the projec
 Now execute `docker-compose up --build` from `./docker`.<br>
 To check if the docker successfully install with command `docker ps` you should see 3 containers named "w2p.xxx"
 
-##Docker commands 
+## Docker commands 
 * Enable docker image : `docker-compose up -d`
 * Shutdown docker image : `docker-compose stop`
 * Remove docker image : `docker-compose down`
@@ -44,6 +44,9 @@ Commands above needs to be executed in `./docker` folder
 * Connect to server : `docker exec -ti w2p.server bash`
 * Connect to database : `docker exec -ti w2p.db mysql -uroot -proot`
 
+## Configure dev env
+Create file `.env.local` and add `DATABASE_URL=mysql://root:root@db/web2_2021_project?serverVersion=8.0.20` if you are using the docker however you are not copy/paste the line from `.env` and replace with the values who match to your configuration
 
-##Contributeur
+
+## Contributeur
 Maxime ZINUTTI
