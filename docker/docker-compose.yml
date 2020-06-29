@@ -9,9 +9,6 @@ services:
     ports:
       - 80:80
 
-    volumes:
-      - /home/maxime/projects/HETIC/web2_2021_project:/var/www/html
-
     environment:
       - APACHE_DOCUMENT_ROOT=/var/www/html/public
       - MYSQL_HOST=db

@@ -1,0 +1,4 @@
+services:
+  server:
+    volumes:
+      - /home/maxime/projects/HETIC/web2_2021_project:/var/www/html
