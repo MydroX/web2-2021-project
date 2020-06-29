@@ -23,6 +23,7 @@ You will need Linux, MacOS, or Windows 10 Pro to run docker.
 
 Create in your folder `./docker` a file named `docker-compose.override.yml` and copy/paste this block :
 ```yaml
+version: '3'
 services:
   server:
     volumes:
