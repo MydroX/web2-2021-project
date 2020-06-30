@@ -2,7 +2,7 @@
 
 Repository de l'API pour le projet du groupe 10
 
-## Requirements
+## Project requirements
 * PHP 7.4
 * MySQL 8.0
 
@@ -32,7 +32,7 @@ services:
 Replace `[folder_who_contain_the_project]` by your folder who contain the project.
 
 Now execute `docker-compose up --build` from `./docker`.<br>
-To check if the docker successfully install with command `docker ps` you should see 3 containers named "w2p.xxx"
+To check if the docker successfully install with execute `docker ps` you should see 3 containers named "w2p.xxx"
 
 ## Docker commands 
 * Enable docker image : `docker-compose up -d`
