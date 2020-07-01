@@ -32,5 +32,4 @@ jobs:
           script: |
             cd /var/www/web2-2021-project
             composer install --no-dev --optimize-autoloader --no-interaction
-            php bin/console make:migration --no-interaction
             php bin/console d:m:m --mo-interaction
