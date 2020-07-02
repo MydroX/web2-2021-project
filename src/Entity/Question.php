@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\QuestionRepository;
 use Doctrine\ORM\Mapping as ORM;
+use phpDocumentor\Reflection\DocBlock\Tags\Since;
 
 /**
  * @ORM\Entity(repositoryClass=QuestionRepository::class)
@@ -46,6 +47,11 @@ class Question
      * @ORM\Column(type="string", length=255)
      */
     private $errorPath;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $answer;
 
     public function getId(): ?int
     {
@@ -120,6 +126,18 @@ class Question
     public function setErrorPath(string $errorPath): self
     {
         $this->errorPath = $errorPath;
+
+        return $this;
+    }
+
+    public function getAnswer(): ?string
+    {
+        return $this->answer;
+    }
+
+    public function setAnswer(string $answer): self
+    {
+        $this->answer = $answer;
 
         return $this;
     }
