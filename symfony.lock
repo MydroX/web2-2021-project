@@ -90,6 +90,15 @@
     "php": {
         "version": "7.4"
     },
+    "phpdocumentor/reflection-common": {
+        "version": "2.2.0"
+    },
+    "phpdocumentor/reflection-docblock": {
+        "version": "5.1.0"
+    },
+    "phpdocumentor/type-resolver": {
+        "version": "1.3.0"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -101,6 +110,18 @@
     },
     "psr/log": {
         "version": "1.1.3"
+    },
+    "sensio/framework-extra-bundle": {
+        "version": "5.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.2",
+            "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
+        },
+        "files": [
+            "config/packages/sensio_framework_extra.yaml"
+        ]
     },
     "symfony/apache-pack": {
         "version": "1.0",
@@ -193,11 +214,23 @@
             "src/Kernel.php"
         ]
     },
+    "symfony/http-client": {
+        "version": "v5.1.2"
+    },
+    "symfony/http-client-contracts": {
+        "version": "v2.1.2"
+    },
     "symfony/http-foundation": {
         "version": "v5.1.1"
     },
     "symfony/http-kernel": {
         "version": "v5.1.1"
+    },
+    "symfony/inflector": {
+        "version": "v5.1.2"
+    },
+    "symfony/intl": {
+        "version": "v5.1.2"
     },
     "symfony/maker-bundle": {
         "version": "1.0",
@@ -214,6 +247,9 @@
     "symfony/polyfill-intl-grapheme": {
         "version": "v1.17.0"
     },
+    "symfony/polyfill-intl-icu": {
+        "version": "v1.17.1"
+    },
     "symfony/polyfill-intl-normalizer": {
         "version": "v1.17.0"
     },
@@ -225,6 +261,15 @@
     },
     "symfony/polyfill-php80": {
         "version": "v1.17.0"
+    },
+    "symfony/process": {
+        "version": "v5.1.2"
+    },
+    "symfony/property-access": {
+        "version": "v5.1.2"
+    },
+    "symfony/property-info": {
+        "version": "v5.1.2"
     },
     "symfony/routing": {
         "version": "5.1",
@@ -239,6 +284,12 @@
             "config/packages/routing.yaml",
             "config/routes.yaml"
         ]
+    },
+    "symfony/serializer": {
+        "version": "v5.1.2"
+    },
+    "symfony/serializer-pack": {
+        "version": "v1.0.3"
     },
     "symfony/service-contracts": {
         "version": "v2.1.2"
@@ -257,6 +308,9 @@
     },
     "symfony/yaml": {
         "version": "v5.1.1"
+    },
+    "webmozart/assert": {
+        "version": "1.9.0"
     },
     "zendframework/zend-code": {
         "version": "3.4.1"
