@@ -36,9 +36,15 @@ class Section
      */
     private $articles;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Question::class, mappedBy="section")
+     */
+    private $questions;
+
     public function __construct()
     {
         $this->articles = new ArrayCollection();
+        $this->questions = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -95,6 +101,37 @@ class Section
             // set the owning side to null (unless already changed)
             if ($article->getSection() === $this) {
                 $article->setSection(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Question[]
+     */
+    public function getQuestions(): Collection
+    {
+        return $this->questions;
+    }
+
+    public function addQuestion(Question $question): self
+    {
+        if (!$this->questions->contains($question)) {
+            $this->questions[] = $question;
+            $question->setSection($this);
+        }
+
+        return $this;
+    }
+
+    public function removeQuestion(Question $question): self
+    {
+        if ($this->questions->contains($question)) {
+            $this->questions->removeElement($question);
+            // set the owning side to null (unless already changed)
+            if ($question->getSection() === $this) {
+                $question->setSection(null);
             }
         }
 
