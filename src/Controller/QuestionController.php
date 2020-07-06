@@ -27,13 +27,12 @@ class QuestionController extends AbstractController
     }
 
     /**
-     * @Route("/{section_id}", name="question_by_section_id")
+     * @Route("/{section_id}", name="question_by_section_id", methods={"GET"})
      * @param QuestionRepository $questionRepository
-     * @param SectionRepository $sectionRepository
      * @param $section_id
      * @return JsonResponse
      */
-    public function getQuestionBySectionId(QuestionRepository $questionRepository, SectionRepository $sectionRepository, $section_id) {
+    public function getQuestionBySectionId(QuestionRepository $questionRepository, $section_id) {
         $section = $this->getDoctrine()->getRepository(Section::class)->findOneBy(["section_id" => $section_id]);
         $questions = $questionRepository->findBy(["section" => $section->getId()]);
         return $this->json($questions, 200, [], ["groups" => "question:read"]);
