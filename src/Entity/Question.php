@@ -33,19 +33,7 @@ class Question
     private $image;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     * @Groups("question:read")
-     */
-    private $successPath;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     * @Groups("question:read")
-     */
-    private $errorPath;
-
-    /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="boolean")
      * @Groups("question:read")
      */
     private $answer;
@@ -55,6 +43,11 @@ class Question
      * @ORM\JoinColumn(nullable=false)
      */
     private $section;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $answerText;
 
     public function getId(): ?int
     {
@@ -129,6 +122,18 @@ class Question
     public function setSection(?Section $section): self
     {
         $this->section = $section;
+
+        return $this;
+    }
+
+    public function getAnswerText(): ?string
+    {
+        return $this->answerText;
+    }
+
+    public function setAnswerText(string $answerText): self
+    {
+        $this->answerText = $answerText;
 
         return $this;
     }
