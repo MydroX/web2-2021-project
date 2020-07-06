@@ -46,8 +46,15 @@ class Question
 
     /**
      * @ORM\Column(type="text")
+     * @Groups("question:read")
      */
     private $answerText;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     ²* @Groups("question:read")
+     */
+    private $title;
 
     public function getId(): ?int
     {
@@ -134,6 +141,18 @@ class Question
     public function setAnswerText(string $answerText): self
     {
         $this->answerText = $answerText;
+
+        return $this;
+    }
+
+    public function getTitle(): ?string
+    {
+        return $this->title;
+    }
+
+    public function setTitle(string $title): self
+    {
+        $this->title = $title;
 
         return $this;
     }
