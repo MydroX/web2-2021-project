@@ -39,7 +39,6 @@ class Article
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Section", inversedBy="articles")
-     * @Groups("article:read")
      */
     private $section;
 
