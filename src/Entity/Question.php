@@ -33,18 +33,6 @@ class Question
     private $image;
 
     /**
-     * @ORM\Column(type="text", nullable=true)
-     * @Groups("question:read")
-     */
-    private $description;
-
-    /**
-     * @ORM\Column(type="text", nullable=true)
-     * @Groups("question:read")
-     */
-    private $help;
-
-    /**
      * @ORM\Column(type="string", length=255)
      * @Groups("question:read")
      */
@@ -93,30 +81,6 @@ class Question
     public function setImage(string $image): self
     {
         $this->image = $image;
-
-        return $this;
-    }
-
-    public function getDescription(): ?string
-    {
-        return $this->description;
-    }
-
-    public function setDescription(?string $description): self
-    {
-        $this->description = $description;
-
-        return $this;
-    }
-
-    public function getHelp(): ?string
-    {
-        return $this->help;
-    }
-
-    public function setHelp(?string $help): self
-    {
-        $this->help = $help;
 
         return $this;
     }
