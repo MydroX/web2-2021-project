@@ -21,6 +21,6 @@ class QuestionController extends AbstractController
      */
     public function index(QuestionRepository $questionRepository)
     {
-        return $this->json($questionRepository->findAll(), 200, [], []);
+        return $this->json($questionRepository->findAll(), 200, [], ["groups" => "question:read"]);
     }
 }
