@@ -65,7 +65,6 @@ class Question
     /**
      * @ORM\ManyToOne(targetEntity=Section::class, inversedBy="questions")
      * @ORM\JoinColumn(nullable=false)
-     * @Groups("question:read")
      */
     private $section;
 
