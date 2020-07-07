@@ -21,6 +21,6 @@ class SectionController extends AbstractController
      */
     public function index(SectionRepository $sectionRepository)
     {
-        return $this->json($sectionRepository->findAll(), 200);
+        return $this->json($sectionRepository->findAll(), 200, ["Access-Control-Allow-Origin" => "*"]);
     }
 }

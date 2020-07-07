@@ -23,7 +23,7 @@ class QuestionController extends AbstractController
      */
     public function index(QuestionRepository $questionRepository)
     {
-        return $this->json($questionRepository->findAll(), 200, [], ["groups" => "question:read"]);
+        return $this->json($questionRepository->findAll(), 200, ["Access-Control-Allow-Origin" => "*"], ["groups" => "question:read"]);
     }
 
     /**
@@ -35,6 +35,6 @@ class QuestionController extends AbstractController
     public function getQuestionBySectionId(QuestionRepository $questionRepository, $section_id) {
         $section = $this->getDoctrine()->getRepository(Section::class)->findOneBy(["section_id" => $section_id]);
         $questions = $questionRepository->findBy(["section" => $section->getId()]);
-        return $this->json($questions, 200, [], ["groups" => "question:read"]);
+        return $this->json($questions, 200, ["Access-Control-Allow-Origin" => "*"], ["groups" => "question:read"]);
     }
 }

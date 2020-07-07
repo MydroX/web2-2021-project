@@ -23,7 +23,7 @@ class ArticleController extends AbstractController
      */
     public function index(ArticleRepository $articleRepository)
     {
-        return $this->json($articleRepository->findAll(), 200, [], ['groups' => 'article:read']);
+        return $this->json($articleRepository->findAll(), 200, ["Access-Control-Allow-Origin" => "*"], ['groups' => 'article:read']);
     }
 
     /**
@@ -35,6 +35,6 @@ class ArticleController extends AbstractController
     public function getArticlesBySectionId(ArticleRepository $articleRepository, $sectionId) {
         $section = $this->getDoctrine()->getRepository(Section::class)->findOneBy(["section_id" => $sectionId]);
         $articles = $articleRepository->findBy(["section" => $section->getId()]);
-        return $this->json($articles, 200, [], ["groups" => "article:read"]);
+        return $this->json($articles, 200, ["Access-Control-Allow-Origin" => "*"], ["groups" => "article:read"]);
     }
 }
