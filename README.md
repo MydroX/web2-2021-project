@@ -14,7 +14,10 @@ Repository de l'API pour le projet du groupe 10
 * Docker custom
 
 ## API url
-<a href="https://hetic.zinutti.fr">https://hetic.zinutti.fr</a>
+- Base URL  : https://hetic.zinutti.fr
+- Get questions by section id : https://hetic.zinutti.fr/api/questions/{section_id}
+- Get articlies by section_id : https://hetic.zinutti.fr/api/articles/{section_id}
+> Section ID : revenge_porn | digital_traces | phishing
 
 ## Production spec
 * Hosted VPS by OVH
