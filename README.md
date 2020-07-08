@@ -65,5 +65,8 @@ Pour ce qui est du projet en lui même, j'ai utilisé la dernière version de Sy
 ### Le sujet à t'il influencés mon choix ? 
 Le projet n'a pas vraiment eu de répercution sur les technos étant donné que nous sommes déja pas mal restreint dans le choix des technos et que je ne vois pas ce que j'aurais pu changer comme choix par rapport à notre sujet. 
 
+## Scheme database
+[database scheme](./web2_2021_project_db.svg)
+
 ## Contributor
 Maxime ZINUTTI

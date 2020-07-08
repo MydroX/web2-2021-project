@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="230 58 840 405" width="610px" height="347px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <line x1="329" y1="225" x2="339" y2="225" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="620" y1="245" x2="630" y2="245" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="339" y1="225" x2="620" y2="245" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="336.5" y1="225" x2="332.96446609407" y2="228.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="336.5" y1="225" x2="332.96446609407" y2="221.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="625" y1="245" x2="621.46446609407" y2="248.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="625" y1="245" x2="621.46446609407" y2="241.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="337" y1="340" x2="347" y2="340" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="620" y1="245" x2="630" y2="245" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="347" y1="340" x2="620" y2="245" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="344.5" y1="340" x2="340.96446609407" y2="343.53553390593" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="344.5" y1="340" x2="340.96446609407" y2="336.46446609407" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="625" y1="245" x2="621.46446609407" y2="248.53553390593" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="625" y1="245" x2="621.46446609407" y2="241.46446609407" style="stroke:#cb0;stroke-width:2;"/>
+   <rect width="78" height="20" x="251" y="115" style="fill:#007;stroke:black;"/>
+   <text width="78" height="20" x="256" y="129" style="fill:#fff;" font-family="Arial" font-size="16px"> article</text>
+   <rect width="78" height="20" x="251" y="135" style="fill:#aea;stroke:black;"/>
+   <text width="78" height="20" x="256" y="149" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="78" height="20" x="251" y="155" style="fill:none;stroke:black;"/>
+   <text width="78" height="20" x="256" y="169" style="fill:black;" font-family="Arial" font-size="16px">title</text>
+   <rect width="78" height="20" x="251" y="175" style="fill:none;stroke:black;"/>
+   <text width="78" height="20" x="256" y="189" style="fill:black;" font-family="Arial" font-size="16px">image</text>
+   <rect width="78" height="20" x="251" y="195" style="fill:none;stroke:black;"/>
+   <text width="78" height="20" x="256" y="209" style="fill:black;" font-family="Arial" font-size="16px">content</text>
+   <rect width="78" height="20" x="251" y="215" style="fill:none;stroke:black;"/>
+   <text width="78" height="20" x="256" y="229" style="fill:black;" font-family="Arial" font-size="16px">section_id</text>
+   <rect width="205" height="20" x="620" y="73" style="fill:#007;stroke:black;"/>
+   <text width="205" height="20" x="625" y="87" style="fill:#fff;" font-family="Arial" font-size="16px"> doctrine_migration_versions</text>
+   <rect width="205" height="20" x="620" y="93" style="fill:none;stroke:black;"/>
+   <text width="205" height="20" x="625" y="107" style="fill:black;" font-family="Arial" font-size="16px">version</text>
+   <rect width="205" height="20" x="620" y="113" style="fill:none;stroke:black;"/>
+   <text width="205" height="20" x="625" y="127" style="fill:black;" font-family="Arial" font-size="16px">executed_at</text>
+   <rect width="205" height="20" x="620" y="133" style="fill:none;stroke:black;"/>
+   <text width="205" height="20" x="625" y="147" style="fill:black;" font-family="Arial" font-size="16px">execution_time</text>
+   <rect width="92" height="20" x="245" y="230" style="fill:#007;stroke:black;"/>
+   <text width="92" height="20" x="250" y="244" style="fill:#fff;" font-family="Arial" font-size="16px"> question</text>
+   <rect width="92" height="20" x="245" y="250" style="fill:#aea;stroke:black;"/>
+   <text width="92" height="20" x="250" y="264" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="92" height="20" x="245" y="270" style="fill:none;stroke:black;"/>
+   <text width="92" height="20" x="250" y="284" style="fill:black;" font-family="Arial" font-size="16px">question</text>
+   <rect width="92" height="20" x="245" y="290" style="fill:none;stroke:black;"/>
+   <text width="92" height="20" x="250" y="304" style="fill:black;" font-family="Arial" font-size="16px">image</text>
+   <rect width="92" height="20" x="245" y="310" style="fill:none;stroke:black;"/>
+   <text width="92" height="20" x="250" y="324" style="fill:black;" font-family="Arial" font-size="16px">answer</text>
+   <rect width="92" height="20" x="245" y="330" style="fill:none;stroke:black;"/>
+   <text width="92" height="20" x="250" y="344" style="fill:black;" font-family="Arial" font-size="16px">section_id</text>
+   <rect width="92" height="20" x="245" y="350" style="fill:none;stroke:black;"/>
+   <text width="92" height="20" x="250" y="364" style="fill:black;" font-family="Arial" font-size="16px">answer_text</text>
+   <rect width="92" height="20" x="245" y="370" style="fill:none;stroke:black;"/>
+   <text width="92" height="20" x="250" y="384" style="fill:black;" font-family="Arial" font-size="16px">title</text>
+   <rect width="78" height="20" x="630" y="215" style="fill:#007;stroke:black;"/>
+   <text width="78" height="20" x="635" y="229" style="fill:#fff;" font-family="Arial" font-size="16px"> section</text>
+   <rect width="78" height="20" x="630" y="235" style="fill:#aea;stroke:black;"/>
+   <text width="78" height="20" x="635" y="249" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="78" height="20" x="630" y="255" style="fill:none;stroke:black;"/>
+   <text width="78" height="20" x="635" y="269" style="fill:black;" font-family="Arial" font-size="16px">title</text>
+   <rect width="78" height="20" x="630" y="275" style="fill:none;stroke:black;"/>
+   <text width="78" height="20" x="635" y="289" style="fill:black;" font-family="Arial" font-size="16px">section_id</text>
+</svg>
